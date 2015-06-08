@@ -1,12 +1,12 @@
 development:
-  adapter: POSTGRES
+  adapter: postgresql
   database: <%= ENV['POSTGRES_DB'] %>
   username: <%= ENV['POSTGRES_USER'] %>
   password: <%= ENV['POSTGRES_PASS'] %>
   host: <%= ENV['POSTGRES_HOST'] %>
 
 production:
-  adapter: POSTGRES
+  adapter: postgresql
   database: <%= ENV['POSTGRES_DB'] %>
   username: <%= ENV['POSTGRES_USER'] %>
   password: <%= ENV['POSTGRES_PASS'] %>

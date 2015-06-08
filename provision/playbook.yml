@@ -11,7 +11,7 @@
   gather_facts: no
   tasks:
     - name: postgres
-      shell: 'docker-compose -f /app/compose/dev.yml up -d postgres'
+      shell: 'docker-compose -f /app/docker-compose.yml up -d postgres'
 
 - name: install ruby
   hosts: all
@@ -20,7 +20,7 @@
       rbenv:
         user: vagrant
         version: HEAD
-        ruby_version: 2.1.5
+        ruby_version: 2.2.2
 
 - name: install gems
   hosts: all
